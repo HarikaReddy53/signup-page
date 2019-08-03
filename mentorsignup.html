@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+<center>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+*{background:mentor.jpg}
+input[type=text], input[type=password] ,input[type=number],input[type=date],input[type=email]{
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  <!--width: 25%;-->
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: white;
+color:black;
+}
+.cancelbtn{
+float: left;
+width: 50%;
+}
+ .signupbtn {
+  float: right;
+  width: 50%;
+}
+.container {
+  padding: 6px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+   .signupbtn,
+{
+width:25%;
+}
+ .cancelbtn{
+     width: 25%;
+  }
+}
+</style>
+<body>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+   <center> <h1>Sign Up</h1>
+ 
+    <hr>
+
+    <label for="id"><b>Associate ID</b></label><br>
+    <input type="text" placeholder="Enter ID" name="id" required><br>
+
+ <label for="email"><b>Email</b></label><br>
+    <input type="email" placeholder="Enter Email" name="email" required><br>
+ <label for="lnkin"><b>LinkedIn_url</b></label><br>
+    <input type="text" placeholder="Enter LinkedIn_url" name="lnkin" required><br>
+<label for="fname"><b>First name</b></label><br>
+    <input type="text" placeholder="First name" name="fname" required><br>
+    
+<label for="lname"><b>Last name</b></label><br>
+    <input type="text" placeholder="Last name" name="lname" required><br>
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label><br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+<label for="cno"><b>Contact number</b></label><BR>
+    <input type="number" placeholder="Contact number" name="cno" required><br>
+<label for="rdate"><b>Date of Registration</b></label><br>
+    <input type="date" placeholder="Registration date" name="rdate" required><br>
+    <label for="rcode"><b>Registration code</b></label><br>
+    <input type="text" placeholder="Registration code" name="rcode" required><br>
+   
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+<h1>Skills</h1>
+<br>
+<body background="mentor.jpg">
+
+
+
+<b>Technology</b><br><input type="text" name="tech"><br>
+<br>
+<b>Experience(in yrs)</b><br><input type="number" name="e"><br>
+<br>
+<b>Self rating</b><br><input type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+<br>
+<b>Trainings delivered</b><br> <input type="number" name="td"><br>
+<br>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+</center>
+    <div class="clearfix">
+      
+      <button type="submit" class="signupbtn">Sign Up</button>
+<button type="button" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+</form>
+
+</body>
+
+</center>
+</html>
